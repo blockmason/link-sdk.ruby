@@ -32,5 +32,5 @@ project.post('/postComment', message: 'Hello, world!')
 
 [1]: https://circleci.com/gh/blockmason/link-sdk.ruby.svg?style=svg
 [2]: https://circleci.com/gh/blockmason/link-sdk.ruby
-[3]: https://blockmason.link/wp-content/uploads/2019/07/LINK-SDK.png
+[3]: https://mason.link/sdk.png
 [4]: https://blockmason.link/
