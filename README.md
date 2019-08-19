@@ -15,7 +15,7 @@ gem install blockmason-link
 ## Usage
 
 ```
-require 'blockmason-link'
+require 'blockmason/link'
 
 # Initialize the project
 project = Blockmason::Link::Project.new(client_id: '<client-id>', client_secret: '<client-secret>')
