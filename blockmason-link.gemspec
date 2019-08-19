@@ -17,4 +17,6 @@ Gem::Specification.new do |s|
   ]
   s.homepage = 'https://blockmason.link'
   s.license = 'MIT'
+  s.cert_chain = ['certs/canterberry.pem']
+  s.signing_key = ENV['GEM_SIGNING_KEY_PATH'] if ENV.has_key?('GEM_SIGNING_KEY_PATH')
 end
