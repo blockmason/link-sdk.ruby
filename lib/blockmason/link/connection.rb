@@ -1,6 +1,7 @@
 require 'json'
 require 'net/http'
 
+require_relative './managed_session'
 require_relative './session'
 
 module Blockmason
@@ -28,7 +29,9 @@ module Blockmason
 
         raise response.body if grant.has_key?('errors')
 
-        ::Blockmason::Link::Session.new(access_token: grant['access_token'], base_url: @base_url, http: @http, refresh_token: grant['refresh_token'])
+        session = ::Blockmason::Link::Session.new(access_token: grant['access_token'], base_url: @base_url, http: @http, refresh_token: grant['refresh_token'])
+
+        ::Blockmason::Link::ManagedSession.new(session: session)
       end
     end
   end

@@ -18,7 +18,7 @@ gem install blockmason-link
 require 'blockmason-link'
 
 # Initialize the project
-project = Blockmason::Link::Provider.new.connect!.authenticate!(client_id: '<client-id>', client_secret: '<client-secret>')
+project = Blockmason::Link::Project.new(client_id: '<client-id>', client_secret: '<client-secret>')
 
 # Sample GET request (based on the default Link project)
 outputs = project.get('/helloWorld')
