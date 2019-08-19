@@ -14,7 +14,7 @@ gem install blockmason-link
 
 ## Usage
 
-```
+```ruby
 require 'blockmason/link'
 
 # Initialize the project
