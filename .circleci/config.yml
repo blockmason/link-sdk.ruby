@@ -1,0 +1,16 @@
+ersion: 2
+jobs: 
+  build: 
+    docker: 
+    - image: circleci/ruby:2.6.3-stretch-node
+    steps: 
+    - checkout 
+    - run:
+        name: Build gem
+        command: gem build *.gemspec
+    - run:
+        name: Install gem
+        command: gem install *.gem
+    - run:
+        name: Require gem
+        command: ruby <(echo 'require "blockmason/link"')
