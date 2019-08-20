@@ -2,7 +2,8 @@
 
 [![Link SDK][3]][4]
 
-[![CircleCI][1]][2]
+[![Build Status][1]][2]
+[![Gem Version][13]][14]
 
 Turn this:
 
@@ -11,7 +12,7 @@ pragma solidity ^0.5.10;
 
 
 contract Widgets {
-  struct Widget { 
+  struct Widget {
     uint256 id;
     uint32 color;
     string name;
@@ -19,7 +20,7 @@ contract Widgets {
 
   mapping (uint256 => Widget) private widgets;
 
-  function createWidget(uint256 id, uint32 color, string memory name) public { 
+  function createWidget(uint256 id, uint32 color, string memory name) public {
     require(widgets[id].id != id);
 
     widgets[id].id = id;
@@ -141,3 +142,5 @@ and important to us, and we endeavor to empower contribution and collaboration.
 [10]: https://blockmason.link/support
 [11]: https://guides.rubygems.org/security/#using-gems
 [12]: https://www.rubydoc.info/gems/blockmason-link/Blockmason/Link/Project
+[13]: https://img.shields.io/gem/v/blockmason-link
+[14]: https://rubygems.org/gems/blockmason-link
