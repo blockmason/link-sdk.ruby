@@ -3,8 +3,6 @@ require_relative './session'
 module Blockmason
   module Link
     class ManagedSession
-      attr_accessor :session
-
       def initialize(session:)
         @session = session
       end

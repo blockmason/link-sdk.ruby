@@ -7,8 +7,6 @@ require_relative './session'
 module Blockmason
   module Link
     class Connection
-      attr_accessor :base_url, :http
-
       def initialize(base_url:, http:)
         @base_url = base_url
         @http = http

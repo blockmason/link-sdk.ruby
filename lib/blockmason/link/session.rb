@@ -5,8 +5,6 @@ require 'uri'
 module Blockmason
   module Link
     class Session
-      attr_accessor :access_token, :base_url, :http, :refresh_token
-
       def initialize(access_token:, base_url:, http:, refresh_token:)
         @access_token = access_token
         @base_url = base_url
