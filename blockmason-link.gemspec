@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'blockmason-link'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.date = '2019-08-19'
   s.summary = 'Blockmason Link SDK'
   s.description = 'Interact with your Blockmason Link projects with ease.'
