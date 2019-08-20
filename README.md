@@ -106,6 +106,8 @@ project.post('/createWidget', id: 1, color: 0x3090f0, name: 'anvil')
 # => {}
 ```
 
+For full documentation, see the generated RDoc [API Reference][12].
+
 ## Support
 
 ❓ Have a question?
@@ -138,3 +140,4 @@ and important to us, and we endeavor to empower contribution and collaboration.
 [9]: https://github.com/blockmason/link-sdk.ruby/issues
 [10]: https://blockmason.link/support
 [11]: https://guides.rubygems.org/security/#using-gems
+[12]: https://www.rubydoc.info/gems/blockmason-link/Blockmason/Link/Project
